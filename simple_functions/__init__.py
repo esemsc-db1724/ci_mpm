@@ -2,6 +2,7 @@ from .functions1 import *  # noqa
 
 try:
     from importlib.metadata import version, PackageNotFoundError  # Python 3.8+
+    from  functools import cache
 except ImportError:  # For Python < 3.8
     from importlib_metadata import version, PackageNotFoundError
 
